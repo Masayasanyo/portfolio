@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Masaya Nishimura - Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="img/png" href="assets/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="index.html"><img class="logo" src="assets/logo.svg" alt="logo"></a>
+            </h1>        
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="hero">
+            <div>
+                <h2>I'm Masaya</h2>
+                <p>a web developer</p>
+                <div class="btns">
+                    <a class="btn" href="#about">LEARN MORE</a>
+                    <a class="btn" href="#contact">CONTACT ME</a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/programing.svg" alt="programing">
+            </div>
+        </section>
+        
+        <section id="about">
+            <div class="about-imgs">
+                <img src="assets/books.png" alt="books" id="book">
+                <img src="assets/movie.png" alt="movie" id="movie">
+                <img src="assets/pc.svg" alt="pc" id="pc">
+            </div>
+
+            <div>
+                <h3>About Me</h3>
+                <p>
+                    I am a graduate student studying computer science.<br/>
+                    I love books, movies, learning computer science and English.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div>
+                <h3>Skills</h3>
+                <p>
+                    I learned web development and Python through a bootcamp, and I am currently applying these skills by creating my own applications and continuing to learn. 
+                    Additionally, I use C language in my academic research.
+                </p>
+            </div>
+            <div class="skill-imgs">
+                <img src="assets/html.svg" alt="html logo" class="language" id="html">
+                <img src="assets/css.svg" alt="css logo" class="language" id="css">
+                <img src="assets/javascript.svg" alt="javascript logo" class="language" id="js">
+                <img src="assets/nodejs.svg" alt="nodejs logo" class="language" id="node">
+                <img src="assets/postgresql.svg" alt="postgresql logo" class="language" id="postgre">
+                <img src="assets/c.svg" alt="c logo" class="language" id="c">
+                <img src="assets/python.svg" alt="python logo" class="language" id="python">
+            </div>
+        </section>
+
+        <section id="project">
+            <h3>Projects</h3>
+            <div class="project-list">
+                <div class="project">
+                    <div class="img-back">
+                        <img src="assets/ifh.png" alt="indie film hub image" class="project-img">
+                    </div>
+                    <p class="project-title">Indie Film Hub</p>
+                    <p class="project-languages">
+                        HTML,CSS,React.js,
+                        PostgreSQL,Node.js
+                    </p>
+                    <p class="project-info">
+                        This full-stack web application consists of a frontend, backend, and database. Users can upload, edit, and play videos seamlessly. 
+                        Additionally, all uploaded videos have a trailer preview, and only two selected movies are featured daily for viewing.
+                    </p>
+                    <a class="btn" href="https://github.com/Masayasanyo/ifh_frontend">SEE MORE</a>
+                </div>
+                <div class="project">
+                    <div class="img-back">
+                        <img src="assets/coffee.png" alt="coffee shop website image" class="project-img">
+                    </div>
+                    <p class="project-title">Coffee Shop Website</p>
+                    <p class="project-languages">
+                        HTML,CSS,JavaScript
+                    </p>
+                    <p class="project-info">
+                        This is a fictional coffee shop e-commerce website built with Vanilla JavaScript. 
+                        Users can add desired products to their cart, with data stored in local storage. 
+                        Once the checkout process is completed, the stored data is automatically cleared.
+                    </p>
+                    <a class="btn" href="https://github.com/Masayasanyo/coffee_shop">SEE MORE</a>
+                </div>
+                <div class="project">
+                    <div class="img-back">
+                        <img src="assets/password_manager.png" alt="password manager image" class="project-img">
+                    </div>
+                    <p class="project-title">Password Manager</p>
+                    <p class="project-languages">
+                       Python
+                    </p>
+                    <p class="project-info">
+                        This application allows users to generate secure passwords automatically, store them along with email addresses, and easily search for saved credentials. 
+                        All data is securely stored locally to ensure privacy and security.
+                    </p>
+                    <a class="btn" href="https://github.com/Masayasanyo/Password_manager">SEE MORE</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>
+                If you love learning new things as much as I do.
+                Let's talk about what we are learning and create new things.
+            </p>
+            <a class="btn" href="https://forms.gle/QcpNrjNUF6DqmmWXA">CONTACT ME</a>
+        </section>
+
+        <footer class="page-footer">
+            <small class="copyright">&copy; <span id="year"></span> Masay Nishimura</small>
+            <a href="https://github.com/Masayasanyo"><img id="github" src="assets/github-mark.svg"></a>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

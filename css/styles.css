@@ -19,7 +19,7 @@ img {
     max-width: 100%;
 }
 section {
-    width: 1065px;
+    max-width: 1065px;
     margin: 5rem auto 8rem auto;
     display: flex;
     justify-content: space-between;
@@ -61,7 +61,7 @@ p {
 
 /* header */
 header {
-    width: 1065px;
+    max-width: 1065px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -195,4 +195,107 @@ header {
 }
 #github {
     width: 20px;
+}
+
+@media (max-width: 800px) {
+    section {
+        margin: 3rem auto 5rem auto;
+        flex-direction: column;
+        gap: 5rem;
+        text-align: center;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.0rem;
+    }
+    .btn {
+        font-size: 0.8rem;
+    }
+    #about, #skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    /* hero */
+    .hero-img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /* about */
+    .about-text {
+        order: 1;
+    }
+    .about-imgs {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        order: 2;
+    }
+    #book {
+        width: 200px;
+    }
+    #movie, #pc {
+        width: 120px;
+    }
+
+    /* skill */
+    .skill-imgs {
+        gap: .8rem;
+    }
+    .language {
+        width: 60px;
+    }
+
+    /* project */
+    #project {
+        gap: 0;
+    }
+    .project-list {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .project {
+        align-items: center;
+        margin: 0 1rem;
+    }
+
+
+    .img-back {
+        padding: .5rem;
+        width: 280px;
+        height: 160px;
+    }
+    .project-title, .project-languages {
+        text-align: center;
+    }
+    .project-languages, .project-info {
+        font-size: 0.9rem;
+    }
+    .project .btn {
+        margin: 0 auto;
+    }
+
+    /* header */
+    header {
+        flex-direction: column;
+        padding: 1.0rem 0;
+    }
+    .logo {
+        width: 80px;
+    }
+    .main-nav {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: 1.0rem;
+    }
 }
